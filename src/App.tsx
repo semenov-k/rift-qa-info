@@ -3,7 +3,8 @@ import { useMemo, useState } from "react";
 import { cn } from "./lib/utils";
 
 const iosBuildNumberRegex = /buildNumber from \d+ to (\d+)/;
-const androidApkUrlRegex = /(https:\/\/expo\.dev\/artifacts\/eas\/[^\s]+\.apk)/;
+const androidApkUrlRegex =
+  /(https:\/\/expo\.dev\/artifacts\/eas\/[^\s]+\.(?:apk|aab))/;
 const androidIdRegex =
   /See 🤖 Android logs: https:\/\/expo\.dev\/accounts\/[^/]+\/projects\/[^/]+\/builds\/([a-f0-9-]+)/;
 
