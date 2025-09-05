@@ -38,12 +38,6 @@ const buildOutputToQAInfo = (buildOutput: string) => {
   if (!data.iosBuildNumber) {
     errors.push("iosBuildNumber is not found");
   }
-  if (!data.androidApkUrl) {
-    errors.push("androidApkUrl is not found");
-  }
-  if (!data.androidId) {
-    errors.push("androidId is not found");
-  }
   if (!data.iosId) {
     errors.push("iosId is not found");
   }
